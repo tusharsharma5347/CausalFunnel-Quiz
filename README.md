@@ -9,7 +9,7 @@ A modern, competitive programming-style quiz application built with the MERN sta
 
 ## 🚀 Live Demo
 
-- **Frontend**: [https://causalfunnel-quiz.vercel.app](https://causalfunnel-quiz.vercel.app)
+- **Frontend**: [https://causal-funnel-quiz-orpin.vercel.app/](https://causal-funnel-quiz-orpin.vercel.app/)
 - **Backend API**: [https://causalfunnel-backend.onrender.com](https://causalfunnel-backend.onrender.com)
 
 ## ✨ Features
@@ -69,7 +69,7 @@ A modern, competitive programming-style quiz application built with the MERN sta
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/causalfunnel-quiz.git
+   git clone https://github.com/tusharsharma5347/CausalFunnel-Quiz
    cd causalfunnel-quiz
    ```
 
@@ -91,7 +91,7 @@ A modern, competitive programming-style quiz application built with the MERN sta
 Create `backend/.env`:
 ```env
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/causalfunnel
+MONGODB_URI= YOUR_MONGODB URI
 NODE_ENV=development
 FRONTEND_URL=http://localhost:3000
 ```
@@ -122,30 +122,6 @@ REACT_APP_API_URL=http://localhost:5000/api
    - **Frontend**: http://localhost:3000
    - **Backend API**: http://localhost:5000
 
-## 📡 API Endpoints
-
-### Quiz Management
-- `POST /api/quiz/start` - Start a new quiz session
-- `PUT /api/quiz/question/:quizId/:questionId` - Update question status
-- `POST /api/quiz/submit/:quizId` - Submit completed quiz
-- `GET /api/quiz/results/:quizId` - Retrieve quiz results
-- `GET /api/health` - Health check endpoint
-
-### Example API Usage
-
-#### Start Quiz
-```bash
-curl -X POST http://localhost:5000/api/quiz/start \
-  -H "Content-Type: application/json" \
-  -d '{"email":"user@example.com"}'
-```
-
-#### Submit Answer
-```bash
-curl -X PUT http://localhost:5000/api/quiz/question/{quizId}/0 \
-  -H "Content-Type: application/json" \
-  -d '{"user_answer":"Paris","visited":true,"attempted":true}'
-```
 
 ## 🎮 How to Use
 
