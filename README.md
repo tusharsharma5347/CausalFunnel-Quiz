@@ -1,11 +1,6 @@
 # 🧠 CausalFunnel Quiz Application
 
-A modern, competitive programming-style quiz application built with the MERN stack, featuring a sleek HackerEarth/HackerRank-inspired design with light and dark theme support.
-
-![CausalFunnel Quiz](https://img.shields.io/badge/Status-Live-brightgreen)
-![React](https://img.shields.io/badge/React-18-blue)
-![Node.js](https://img.shields.io/badge/Node.js-18-green)
-![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green)
+A modern, competitive programming-style quiz application built with the MERN stack.
 
 ## 🚀 Live Demo
 
