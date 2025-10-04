@@ -12,11 +12,23 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: [
-    'http://localhost:3000',
-    'https://quiz-app-frontend-eight-eta.vercel.app', // Replace with your Vercel URL
-    'https://*.vercel.app'// Allow all Vercel preview deployments
-  ],
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    
+    const allowedOrigins = [
+      'http://localhost:3000',
+      'https://causal-funnel-quiz-orpin.vercel.app',
+      'https://quiz-app-frontend-eight-eta.vercel.app'
+    ];
+    
+    // Check if origin is in allowed list or is a Vercel deployment
+    if (allowedOrigins.indexOf(origin) !== -1 || origin.endsWith('.vercel.app')) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
 app.use(express.json());
