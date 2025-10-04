@@ -5,7 +5,7 @@ A modern, competitive programming-style quiz application built with the MERN sta
 ## 🚀 Live Demo
 
 - **Frontend**: [https://causal-funnel-quiz-orpin.vercel.app/](https://causal-funnel-quiz-orpin.vercel.app/)
-- **Backend API**: [https://causalfunnel-backend.onrender.com](https://causalfunnel-backend.onrender.com)
+- **Backend API**: [https://causalfunnel-backend.onrender.com](https://causalfunnel-quiz.onrender.com/api)
 
 ## ✨ Features
 
